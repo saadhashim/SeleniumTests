@@ -1,11 +1,12 @@
 package se.jsta.seleniumtest.seleniumtest;
 
 import static org.openqa.selenium.By.*;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import junit.framework.Assert;
 
 public class LoginPage {
 	WebDriver driver;
