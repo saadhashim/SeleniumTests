@@ -33,8 +33,8 @@ public class SeleniumTest {
 	
 	@Before
 	public void setup() throws MalformedURLException{
-		DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
-		WebDriver driver = new RemoteWebDriver(new URL("http://selenium02-mo2s3bjc.cloudapp.net:4444/wd/hub"), capability);
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		driver = new RemoteWebDriver(new URL("http://selenium02-mo2s3bjc.cloudapp.net:4444/wd/hub"), capability);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
